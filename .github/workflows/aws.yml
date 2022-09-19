@@ -53,13 +53,13 @@ jobs:
     - name: Setup Java JDK
       uses: actions/setup-java@v3.3.0
       with:
-            java-version: 17
-            distribution: liberica
+        java-version: 17
+        distribution: liberica
 
     - name: Build
       uses: gradle/gradle-build-action@v2
       with:
-            arguments: build
+        arguments: build
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
